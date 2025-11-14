@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Talent Showcase</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TalentShowcase</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="#listings" class="nav-link">Talents</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Discover Amazing Local Talent</h1>
+            <p class="lead">Explore talents in music, dance, art, photography, and more.</p>
+
+            <div class="d-flex justify-content-center gap-2 mt-3">
+                <input type="text" id="searchBox" class="form-control w-50" placeholder="Search talents or skills...">
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 fw-bold">Categories</h2>
+
+            <div class="row g-3" id="categoryRow">
+                <!-- JS will insert categories -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TALENT LISTINGS -->
+    <section id="listings" class="bg-light py-5">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Featured Talent</h2>
+
+                <select id="sortSelect" class="form-select w-auto">
+                    <option value="name_asc">Name: A → Z</option>
+                    <option value="name_desc">Name: Z → A</option>
+                </select>
+            </div>
+
+            <div class="row g-4" id="cardsRow">
+                <!-- JS will insert talent cards -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="py-4 text-white bg-dark">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <h5 class="fw-bold">Contact</h5>
+                <p>Email: talentshowcase@gmail.com</p>
+            </div>
+
+            <div class="text-end">
+                <p class="mb-0">Created by <strong>Your Name</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
